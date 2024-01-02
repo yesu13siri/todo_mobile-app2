@@ -1,0 +1,245 @@
+*{
+    margin:0px;
+}
+.container{
+    position:relative; 
+    background-color: #434040;
+}
+.sub-container{
+  filter: blur(1px);
+}
+.container-bar{
+    position:relative;
+    top:0px;
+    left:0px;
+    box-shadow: 0px 0px 5px;
+    height:10vh;
+    width:100%;
+    font-size: 30px;
+    opacity:1;
+}
+
+#bold{
+    position:absolute;
+    left:136px;
+    top:13px;
+}
+
+
+
+.sub1{
+    position: relative;
+    font-style: bold;
+    
+}
+
+#task{
+ position:absolute;
+ right:100px;
+ top:50px;
+ font-size: 20px;
+
+}
+
+#circle{
+ position: absolute;
+ right:225px;
+ top:45px;
+ font-size: 30px;
+ color:#94d5f2;
+}
+
+.card{
+    width:900px;
+    height: 550px;
+    position: absolute;
+    top:200px;
+    right:200px;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+     justify-content:space-evenly;
+     align-content: space-around;
+
+}
+
+.card1{
+      box-shadow: 0 0 5px black;
+      width:250px;
+      height: 200px;
+      margin-top:10px;
+      border-radius: 5px;
+}
+#heading{
+    padding:10px;
+    border-bottom: 1px solid black;
+    text-align: center;
+    font-weight: 800;
+    font-size:30px;
+    color:rgb(97, 166, 166);
+}
+
+#body{
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    opacity:0.5;
+}
+
+#check{
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 300;
+    opacity:0.7;
+}
+
+
+.pop-up{
+    position:absolute;
+    background-color: rgb(218, 231, 231);
+    width: 350px;
+    height: 150px;
+    border-radius: 5px;
+    top:200px;
+    left:440px;
+    box-shadow:0px 0px 5px black;
+    
+}
+.text{
+    padding: 10px 0px 10px 20px;
+    font-weight: 700;
+    font-size: larger;
+    border-bottom: 1px solid black;
+}
+#cross{
+    margin-left: 180px;
+    cursor: pointer;
+}
+.area{
+    margin-top: 15px;
+    width: 300px;
+    height: 30px;
+    
+}
+.add{
+    position:relative;
+    left:250px;
+    margin-top: 20px;
+    background-color: #00a5ec;
+    color: aliceblue;
+    border: 0px;
+    cursor: pointer;
+    padding:5px;
+    border-radius: 5px;
+}
+
+.add:hover{
+    background-color:burlywood;
+    
+}
+
+@media(max-width:699px){
+    .card{
+        left:25px;
+        top:170px;
+        flex-direction: column;
+        width:354px;
+        height: auto;
+        padding:20px 0px;
+        
+    }
+    #bold{
+        left:10px;
+        top:20px;
+
+    }
+   #task{
+         display: none;
+   }
+   #circle{
+         font-size:50px;
+         left:180px;
+         top:30px;
+         color:#1396d2;
+   }
+   .container-bar{
+    box-shadow: 0px 3px 30px #7B7B7B29;
+    font-size:40px;
+   }
+   .card1{
+          padding:0px;
+          width:320px;
+          height:300px;
+   }
+   #heading{
+     padding:20px;
+   }
+   #body{
+      font-size: 30px;
+      padding:30px;
+   }
+   #check{
+    font-size: 30px;
+    padding:30px;
+   }
+   .pop-up{
+    width: 360px;
+    left:15px;
+    top:300px;
+   }
+}
+
+@media(min-width:700px)
+{
+    .container-bar{
+        box-shadow: 0px 3px 30px #7B7B7B29;
+        font-size:50px;
+    }
+    #bold{
+        top:25px;
+        left:30px;
+    }
+ .card{
+     
+     flex-direction: row;
+     left:0px;
+     padding:30px;
+     width:700px;
+     height:auto;
+
+ }
+ .sub1{
+     font-weight: 500;
+
+ }
+ #circle{
+       font-size:50px;
+       right:280px;
+ }
+ #task{
+    font-size: 30px;
+    top:55px;
+ }
+ .pop-up{
+    left:200px;
+    top:200px;
+ }
+
+}
+
+@media(min-width:1000px)
+{
+    .container-bar{
+            height:15vh;
+    }
+    .card{
+        width:900px;
+        padding: 20px;
+        left:40px;
+
+    }
+    .pop-up{
+        left:335px;
+        
+    }
+}
